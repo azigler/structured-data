@@ -1360,12 +1360,12 @@ var staticRenderFns = []
 
 // CONCATENATED MODULE: ./src/App.vue?vue&type=template&id=4981235a&
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"d49cc424-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/StructuredData.vue?vue&type=template&id=1e90fdec&
-var StructuredDatavue_type_template_id_1e90fdec_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('script',{attrs:{"type":"application/ld+json"},domProps:{"innerHTML":_vm._s(_vm.schemaData)}})}
-var StructuredDatavue_type_template_id_1e90fdec_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"d49cc424-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/StructuredData.vue?vue&type=template&id=6842dd4e&
+var StructuredDatavue_type_template_id_6842dd4e_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('script',{attrs:{"type":"application/ld+json"},domProps:{"innerHTML":_vm._s(_vm.schemaData)}})}
+var StructuredDatavue_type_template_id_6842dd4e_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/StructuredData.vue?vue&type=template&id=1e90fdec&
+// CONCATENATED MODULE: ./src/components/StructuredData.vue?vue&type=template&id=6842dd4e&
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptor.js
 var get_own_property_descriptor = __webpack_require__("268f");
@@ -1429,188 +1429,6 @@ function _objectSpread(target) {
 //
 //
 //
-var schemaObject;
-var schema = {
-  '@context': 'http://schema.org'
-  /*
-    PERSON
-    ------
-    N/A
-  */
-
-};
-var person = {
-  '@id': 'AndrewZigler',
-  description: 'Andrew Zigler is a director and front-end developer at an education company. He makes interactive learning experiences used by thousands of students annually.',
-  email: 'me@andrewzigler.com',
-  familyName: 'Zigler',
-  givenName: 'Andrew',
-  image: 'https://en.gravatar.com/userimage/28005451/31f00adf19b8a17dc8fc7e92aca68bdf.jpg?size=300',
-  jobTitle: 'Director of Business Development',
-  name: 'Andrew Zigler',
-  mainEntityOfPage: 'https://www.andrewzigler.com/',
-  url: 'https://www.andrewzigler.com/'
-};
-
-var personSchema = _objectSpread({}, schema, {
-  '@type': 'Person'
-}, person);
-
-var logoSchema = _objectSpread({}, schema, {
-  '@type': 'ImageObject'
-});
-
-var personSchemaForBlogPosting = _objectSpread({
-  '@id': 'AndrewZiglerOrganization'
-}, schema, {
-  '@type': 'Organization'
-}, person, {
-  logo: _objectSpread({}, logoSchema, {
-    '@id': 'BlogLogo',
-    url: 'https://en.gravatar.com/userimage/28005451/31f00adf19b8a17dc8fc7e92aca68bdf.jpg?size=300'
-  })
-});
-/*
-  BLOG POSTING
-  ------------
-  dateCreated: 'DATE',
-  dateModified: 'DATE',
-  datePublished: 'DATE',
-  description: 'Blah',
-  headline: 'headline',
-  image: 'URL',
-  mainEntityOfPage: 'THIS URL',
-  name: 'NAME',
-  articleBody: 'text',
-  articleSection: 'category',
-  wordCount: '??',
-  url: 'URL'
-*/
-
-
-var blogPosting = {
-  author: personSchema,
-  creator: personSchema,
-  publisher: personSchemaForBlogPosting
-};
-
-var blogPostingSchema = _objectSpread({}, schema, {
-  '@type': 'BlogPosting'
-}, blogPosting);
-/*
-  BLOG
-  ----
-  image: 'URL',
-  thumbnailUrl: 'URL'
-*/
-
-
-var blog = {
-  '@id': 'AndrewZiglerBlog',
-  author: personSchema,
-  creator: personSchema,
-  dateCreated: '2017-12-02T05:16:00+0000',
-  datePublished: '2017-12-02T05:16:00+0000',
-  description: "Since 2017, Andrew Zigler's monthly blog has been providing key insights into web technology with a fresh perspective. The blog also features comprehensive reviews, in-depth tutorials, and cultural articles.",
-  headline: "Andrew Zigler's Blog",
-  mainEntityOfPage: 'https://www.andrewzigler.com/blog/',
-  name: "Andrew Zigler's Blog",
-  publisher: personSchema,
-  url: 'https://www.andrewzigler.com/blog/'
-};
-
-var blogSchema = _objectSpread({}, schema, {
-  '@type': 'Blog'
-}, blog);
-/*
-  WEB SITE
-  --------
-  N/A
-*/
-
-
-var webSite = {
-  '@id': 'andrewziglerdotcom',
-  author: personSchema,
-  creator: personSchema,
-  description: 'The personal website of Andrew Zigler, a multi-discipilinary web developer and business director. This website showcases his portfolio of web development work and hosts his blog, where he writes about technology and culture.',
-  hasPart: blogSchema,
-  headline: 'Andrew Zigler',
-  image: 'https://en.gravatar.com/userimage/28005451/31f00adf19b8a17dc8fc7e92aca68bdf.jpg?size=300',
-  mainEntity: personSchema,
-  name: 'Andrew Zigler',
-  thumbnailUrl: 'https://en.gravatar.com/userimage/28005451/31f00adf19b8a17dc8fc7e92aca68bdf.jpg?size=300',
-  url: 'https://www.andrewzigler.com/'
-};
-
-var webSiteSchema = _objectSpread({}, schema, {
-  '@type': 'WebSite'
-}, webSite);
-/*
-  WEB PAGE
-  --------
-  description: 'DESCRIPTION FROM PAGE',
-  headline: 'TITLE FROM PAGE',
-  image: 'URL',
-  name: 'TITLE FROM PAGE',
-  thumbnailUrl: 'URL',
-  url: 'URL FROM PAGE'
-*/
-
-
-var webPage = {
-  '@id': 'webpage',
-  author: personSchema,
-  creator: personSchema,
-  isPartOf: webSiteSchema
-};
-
-var webPageSchema = _objectSpread({}, schema, {
-  '@type': 'WebPage'
-}, webPage);
-/*
-  SOFTWARE SOURCE CODE
-  --------------------
-  codeRepository: 'URL',
-  dateCreated: 'DATE',
-  dateModified: 'DATE',
-  datePublished: 'DATE',
-  description: 'DESCRIPTION FROM PAGE',
-  headline: 'TITLE FROM PAGE',
-  image: 'URL',
-  name: 'TITLE FROM PAGE',
-  thumbnailUrl: 'URL',
-  url: 'URL FROM PAGE'
-*/
-
-
-var softwareSourceCode = {
-  author: personSchema,
-  creator: personSchema,
-  isPartOf: webSiteSchema
-};
-
-var softwareSourceCodeSchema = _objectSpread({}, schema, {
-  '@type': 'SoftwareSourceCode'
-}, softwareSourceCode);
-
-schemaObject = {
-  schema: schema,
-  person: person,
-  personSchema: personSchema,
-  logoSchema: logoSchema,
-  personSchemaForBlogPosting: personSchemaForBlogPosting,
-  blogPosting: blogPosting,
-  blogPostingSchema: blogPostingSchema,
-  blog: blog,
-  blogSchema: blogSchema,
-  webSite: webSite,
-  webSiteSchema: webSiteSchema,
-  webPage: webPage,
-  webPageSchema: webPageSchema,
-  softwareSourceCode: softwareSourceCode,
-  softwareSourceCodeSchema: softwareSourceCodeSchema
-};
 /* harmony default export */ var StructuredDatavue_type_script_lang_js_ = ({
   props: {
     type: {
@@ -1619,15 +1437,17 @@ schemaObject = {
     },
     properties: {
       type: Object,
-      default: function _default() {
-        return schemaObject.webSite;
-      }
+      default: function _default() {}
+    },
+    schema: {
+      type: Object,
+      default: function _default() {}
     }
   },
   computed: {
     schemaData: function schemaData() {
       var schemaKey = "".concat(this.type.charAt(0).toLowerCase() + this.type.slice(1), "Schema");
-      return JSON.stringify(_objectSpread({}, schemaObject[schemaKey], this.properties));
+      return JSON.stringify(_objectSpread({}, this.schema[schemaKey], this.properties));
     }
   }
 });
@@ -1738,8 +1558,8 @@ function normalizeComponent (
 
 var component = normalizeComponent(
   components_StructuredDatavue_type_script_lang_js_,
-  StructuredDatavue_type_template_id_1e90fdec_render,
-  StructuredDatavue_type_template_id_1e90fdec_staticRenderFns,
+  StructuredDatavue_type_template_id_6842dd4e_render,
+  StructuredDatavue_type_template_id_6842dd4e_staticRenderFns,
   false,
   null,
   null,

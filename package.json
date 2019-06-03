@@ -1,6 +1,6 @@
 {
   "name": "@andrewzigler/structured-data",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Structured Data component for Vue.",
   "repository": "azigler/structured-data",
   "scripts": {

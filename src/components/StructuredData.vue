@@ -11,11 +11,9 @@ export default {
     },
     properties: {
       type: Object,
-      default() {
-        return schemaObject.webSite
-      }
+      default() {}
     },
-    schemaObject: {
+    schema: {
       type: Object,
       default() {}
     }
@@ -25,7 +23,7 @@ export default {
       const schemaKey = `${this.type.charAt(0).toLowerCase() +
         this.type.slice(1)}Schema`
       return JSON.stringify({
-        ...this.schemaObject[schemaKey],
+        ...this.schema[schemaKey],
         ...this.properties
       })
     }
