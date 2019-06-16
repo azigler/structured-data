@@ -148,4 +148,4 @@ var __vue_staticRenderFns__ = [];
 
 new Vue({
   render: function (h) { return h(component); },
-}).$mount('#app');exports.default=component;
+});exports.default=component;

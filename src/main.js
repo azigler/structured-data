@@ -5,6 +5,6 @@ Vue.config.productionTip = false
 
 new Vue({
   render: h => h(component),
-}).$mount('#app')
+})
 
 export default component;
