@@ -1,6 +1,6 @@
 {
   "name": "@andrewzigler/structured-data",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "Structured data JSON-LD injection component for Vue.",
   "homepage": "https://www.andrewzigler.com/portfolio/structured-data-vue-component",
   "author": "Andrew Zigler <andrewzigler@gmail.com> (https://www.andrewzigler.com)",
