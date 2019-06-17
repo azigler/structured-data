@@ -1,29 +1,18 @@
-# structured-data
+# @andrewzigler/structured-data
 
-## Project setup
+Simple component for injecting JSON-LD [structured data](https://developers.google.com/search/docs/guides/intro-structured-data) from vocabularies like [Schema.org](https://schema.org/) into a Vue app.
+
+## Installation
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Development
 ```
-npm run serve
+npm run dev
 ```
 
-### Compiles and minifies for production
+### Compiling
 ```
 npm run build
 ```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
