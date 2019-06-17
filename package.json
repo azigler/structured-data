@@ -2,6 +2,9 @@
   "name": "@andrewzigler/structured-data",
   "version": "1.1.5",
   "description": "Structured Data component for Vue.",
+  "homepage": "https://www.andrewzigler.com/portfolio/structured-data-vue-component",
+  "author": "Andrew Zigler <andrewzigler@gmail.com> (https://www.andrewzigler.com)",
+  "license": "MIT",
   "repository": "azigler/structured-data",
   "scripts": {
     "build": "cross-env NODE_ENV=production rollup --config build/rollup.config.js",
