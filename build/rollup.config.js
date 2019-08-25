@@ -34,10 +34,12 @@ const baseConfig = {
 const external = [
   // list external dependencies, exactly the way it is written in the import statement.
   // eg. 'jquery'
+  'vue'
 ];
 const globals = {
   // Provide global variable names to replace your external imports
   // eg. jquery: '$'
+  vue: 'Vue'
 };
 
 // Customize configs for individual targets
@@ -45,6 +47,7 @@ const buildFormats = [];
 if (!argv.format || argv.format === 'es') {
   const esConfig = {
     ...baseConfig,
+    external,
     output: {
       file: 'dist/@andrewzigler/structured-data.esm.js',
       format: 'esm',
