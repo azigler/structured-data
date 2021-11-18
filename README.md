@@ -1,6 +1,6 @@
 ![](https://repository-images.githubusercontent.com/189937061/509f1c80-2652-11ea-9ad6-3caa158e635e)
 
-# @andrewzigler/structured-data
+# @andrewzigler/structured-data *\*\*(deprecated)\*\**
 
 [![npm version](https://badge.fury.io/js/%40andrewzigler%2Fstructured-data.svg)](https://badge.fury.io/js/%40andrewzigler%2Fstructured-data)
 
